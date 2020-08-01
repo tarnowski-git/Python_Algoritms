@@ -25,7 +25,7 @@ Given two integers ‘a’ and ‘m’, find modular multiplicative inverse of �
 
 The modular multiplicative inverse is an integer ‘x’ such that.
 
-a x ≡ 1 (mod m)
+a · x ≡ 1 (mod m)
 
 The value of x should be in {0, 1, 2, … m-1}, i.e., in the range of integer modulo m.
 
@@ -52,4 +52,4 @@ such a case, to decrypt them with a public key (used for digital signatures).
 The basic idea behind the DHKE is that exponentiation in Z∗p,
 p prime, is a one-way function and that exponentiation is commutative, i.e.,
 
-k = (α^x).y ≡ (α^y).x mod p
+k = (α^x)·y ≡ (α^y)·x mod p

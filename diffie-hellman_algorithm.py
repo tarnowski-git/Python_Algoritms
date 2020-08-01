@@ -42,9 +42,9 @@ if __name__ == '__main__':
     print(f"Alice's public key is {A}")
 
     # 3.1 Bob chooses a large integer `b` randomly and computes B = b ^ alpha mod p.
-    b = random.randint(2, p - 1)    # private key A
+    b = random.randint(2, p - 1)    # private key B
     # Modular exponentiation
-    B = pow(alpha, b, p)             # public key A
+    B = pow(alpha, b, p)             # public key B
 
     # 3.1 Bob sends the value B to Alice.
     print(f"Bobs's public key is {B}")
