@@ -23,36 +23,36 @@ if __name__ == '__main__':
 
     t0 = time.time()
 
-    # 1.1 Choose a large prime p.
+    # 1.1. Choose a large prime p.
     p = generate_prime(keysize=32)
 
-    # 1.2 Choose an integer α ∈ {2,3, . . . , p−2}.
+    # 1.2. Choose an integer α ∈ {2,3, . . . , p−2}.
     alpha = random.randint(2, p)
 
-    # 1.3 Publish p and α.
+    # 1.3. Publish p and α.
     print(f"p = {p}")
     print(f"α = {alpha}")
 
-    # 2.1 Alice chooses a large integer `a` randomly and computes A = a ^ alpha mod p.
+    # 2.1. Alice chooses a large integer `a` randomly and computes A = a ^ alpha mod p.
     a = random.randint(2, p - 1)    # private key A
     # Modular exponentiation
     A = pow(alpha, a, p)             # public key A
 
-    # 2.1 Alice sends the value A to Bob.
+    # 2.2. Alice sends the value A to Bob.
     print(f"Alice's public key is {A}")
 
-    # 3.1 Bob chooses a large integer `b` randomly and computes B = b ^ alpha mod p.
+    # 3.1. Bob chooses a large integer `b` randomly and computes B = b ^ alpha mod p.
     b = random.randint(2, p - 1)    # private key B
     # Modular exponentiation
     B = pow(alpha, b, p)             # public key B
 
-    # 3.1 Bob sends the value B to Alice.
+    # 3.2. Bob sends the value B to Alice.
     print(f"Bobs's public key is {B}")
 
-    # 4.1 Alice computes ka = B ^ a mod p
+    # 4.1. Alice computes ka = B ^ a mod p
     ka = pow(B, a, p)  # Secret key for Alice
 
-    # 4.2 Bob computes kb = A ^ b mod p
+    # 4.2. Bob computes kb = A ^ b mod p
     kb = pow(A, b, p)  # // Secret key for Bob
 
     print(f"Secret key for the Alice is : {ka}")
