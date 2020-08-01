@@ -3,6 +3,11 @@
 DHKE consists of two protocols, the set-up protocol and the main protocol,
 which performs the actual key exchange.
 
+Proof. Alice computes
+    ka ≡ (α ^ b) ^ a ≡ α ^ a·b mod p
+while Bob computes
+    kb ≡ (α ^ a) ^ b ≡ α ^ a·b mod p
+
 """
 import time
 import random
