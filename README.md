@@ -46,3 +46,10 @@ such a case, to decrypt them with a public key (used for digital signatures).
 4. Compute n = p · q (at this moment it is recommended to delete p and q in order
    to prevent them from being obtained by an eavesdropper).
 5. Your public key is (e, n) and the private key is (d, n).
+
+## Diffie-Hellman Algorithm
+
+The basic idea behind the DHKE is that exponentiation in Z∗p,
+p prime, is a one-way function and that exponentiation is commutative, i.e.,
+
+k = (α^x).y ≡ (α^y).x mod p
