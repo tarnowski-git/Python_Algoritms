@@ -61,3 +61,12 @@ k = (α^x)·y ≡ (α^y)·x mod p
 ## El Gamal Algorithm
 
 ![obraz](https://user-images.githubusercontent.com/34337622/89286190-0d7a4280-d652-11ea-8b50-b544df8bcccb.png)
+
+## RSA Mathematical Attacks
+
+0. Decompose n into its primes p and q.
+1. Φ(n) = (p−1)(q−1)
+2. d^−1 ≡ e mod Φ(n)
+3. x ≡ y^d mod n.
+
+![obraz](https://user-images.githubusercontent.com/34337622/89356083-35eb5680-d6bd-11ea-95a7-4a307379dd1a.png)
