@@ -46,7 +46,7 @@ if __name__ == '__main__':
     # example
     t0 = time.time()
 
-    a, b = 1914, 899
+    a, b = 16, 13
     gdc, x, y = gcd_extended(a, b)
     print(f"gcd({a}, {b}) = {a} * {x} + {b} * {y} = {gdc}")
 

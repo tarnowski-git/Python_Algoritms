@@ -47,9 +47,17 @@ such a case, to decrypt them with a public key (used for digital signatures).
    to prevent them from being obtained by an eavesdropper).
 5. Your public key is (e, n) and the private key is (d, n).
 
+![obraz](https://user-images.githubusercontent.com/34337622/89286425-782b7e00-d652-11ea-9858-ed285b80dd7d.png)
+
 ## Diffie-Hellman Algorithm
 
 The basic idea behind the DHKE is that exponentiation in Z∗p,
 p prime, is a one-way function and that exponentiation is commutative, i.e.,
 
 k = (α^x)·y ≡ (α^y)·x mod p
+
+![obraz](https://user-images.githubusercontent.com/34337622/89286347-53cfa180-d652-11ea-9840-5dcacc32a94f.png)
+
+## El Gamal Algorithm
+
+![obraz](https://user-images.githubusercontent.com/34337622/89286190-0d7a4280-d652-11ea-8b50-b544df8bcccb.png)

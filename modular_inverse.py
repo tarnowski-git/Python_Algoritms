@@ -31,8 +31,8 @@ if __name__ == '__main__':
     # example
     t0 = time.time()
 
-    a = 3
-    m = 11
+    a = 16
+    m = 29
 
     mod_inv, x = modular_inverse(a, m)
     print(f"{a} * {x} mod {m} = {mod_inv}")
